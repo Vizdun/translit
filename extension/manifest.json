@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "translit",
+	"version": "1.0",
+
+	"description": "transliterates to ascii",
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"permissions": ["contextMenus", "menus", "activeTab"],
+
+	"background": {
+		"scripts": ["translit.js"]
+	},
+
+	"web_accessible_resources": ["pkg/*", "pkg/translit_wasm_bg.wasm"]
+}
